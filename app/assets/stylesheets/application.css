@@ -40,7 +40,7 @@
   color: #65c1c1;
 }
 
-.green:hover {
+.green:hover, .green:focus, .green:active {
   color: #65A8C1;
 }
 
