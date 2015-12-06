@@ -37,8 +37,15 @@
 }
 
 .green {
+  color: #65c1c1;
+}
+
+.green:hover {
   color: #65A8C1;
-  background-color: #65A8C1; 
+}
+
+.background-green {
+  background-color: #65c1c1; 
 }
 
 
@@ -51,6 +58,12 @@
   background-color: #65A8C1;
   border-color: #65A8C1;
 }
+
+
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
+  background-color: #65A8C1;
+}
+
 
 
 .background-box {
