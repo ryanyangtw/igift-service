@@ -36,11 +36,12 @@
   background-color: #65c1c1;
 }
 
+
 .green {
   color: #65c1c1;
 }
 
-.green:hover, .green:focus, .green:active {
+.green:hover, .green:focus, .green:focus {
   color: #65A8C1;
 }
 
@@ -54,7 +55,7 @@
   background-color: #65c1c1;
 }
 
-.btn-xl:hover {
+.btn-xl:hover, .btn-xl:focus, .btn-xl:focus {
   background-color: #65A8C1;
   border-color: #65A8C1;
 }
