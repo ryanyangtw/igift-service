@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ * require_tree .
+ *= require css/bootstrap.min.css
+ *= require css/agency.css
+ *= require sass/main
+ *= require_self
+ */
+
+.navbar-default .navbar-brand {
+    /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
+    /*color: aqua; */
+  /*color: rgba(255, 0, 82, 0.75);*/
+  color: #65c1c1;
+}
+
+.navbar-default .nav li a {
+  color: #65c1c1;
+}
+
+.navbar-default .nav li a:hover{
+  color: #65A8C1;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  background-color: #65c1c1;
+}
+
+.green {
+  color: #65A8C1;
+  background-color: #65A8C1; 
+}
+
+
+.btn-xl {
+  border-color: #65c1c1;
+  background-color: #65c1c1;
+}
+
+.btn-xl:hover {
+  background-color: #65A8C1;
+  border-color: #65A8C1;
+}
+
+
+.background-box {
+  background-color: rgba(23, 21, 15, 0.62);
+  padding: 45px 0px 45px 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+@media screen and (max-width: 992px) {
+  /*如果使用者之視窗寬度 <= 992px，將會再載入這裡的 CSS。*/
+  .background-box {
+    /*margin: 0 200px 0 200px;*/
+    background-color: rgba(23, 21, 15, 0.62);
+    padding: 20px 0px 20px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    /*padding-top: 30px;
+    padding-bottom: 30px;*/
+  }
+}
