@@ -61,7 +61,7 @@
                     <div class="background-box">
                         <div class="intro-lead-in">一份動人的心意，送給遠方的她/他</div>
                         <!-- <div class="intro-heading">It's Nice To Meet You</div> -->
-                        <a href="https://m.facebook.com/messages/read/?fbid=387307328060806&_rdr" target="_blank" class="page-scroll btn btn-xl">我要送她/他</a>
+                        <a href="#about" class="page-scroll btn btn-xl">我要送她/他</a>
 
 
                         <!-- <a href="https://m.facebook.com/messages/read/?fbid=387307328060806&_rdr" target="_blank" class="page-scroll btn btn-xl">分享給好友</a> -->
@@ -77,33 +77,38 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">服務內容</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted middle-description">愛禮物的代送禮服務，為最有心的你，完成禮物的精美手工包裝、附上一張代寫的卡片，並替你送去給你心繫的他或她！</h3>
+                    <h3 class="section-subheading text-muted">
+                    凡於愛禮物選購之商品代送禮服務不另外收費。 </h3>
+
+                    <h3 class="section-subheading text-muted middle-description">代送禮的服務內容包含以下三部分：</h3>
+                    <br>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-circle fa-stack-2x text-primary green"></i>
+                        <i class="fa fa-gift fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">精美禮物包裝</h4>
+                    <p class="text-muted">愛禮物會替您所挑選的禮物，穿上美美的外衣，讓禮物獲得完美的第一印象。</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-circle fa-stack-2x text-primary green"></i>
+                        <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">手寫卡片</h4>
+                    <p class="text-muted">愛禮物可以代您將心意書寫在特製卡片上，讓收禮可以更完整地接受到您的溫暖力量。</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-circle fa-stack-2x text-primary green"></i>
+                        <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">代客送禮</h4>
+                    <p class="text-muted">最重要的，不論您是異地戀人，還是在遠方求學討生活的遊子，愛禮物都可以替您將禮物送到心愛的人手中。</p>
                 </div>
             </div>
         </div>
@@ -114,10 +119,10 @@
     <!-- About Section -->
     <section id="about" class="bg-light-gray">
         <div class="container">
-            <div class="row">
+            <div class="row"> 
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">步驟流程</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">要享受代送禮的服務很簡單，只要完成以下三個步驟，就可以與心愛的人一同等待驚喜了。</h3>
                 </div>
             </div>
             <div class="row">
@@ -125,31 +130,41 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <%= image_tag("about/1.png", class: "img-circle img-responsive background-green", alt: "") %>
+                                <%= link_to("http://igift.tw/", target: "_blank") do %>
+                                    <%= image_tag("about/2.png", class: "img-circle img-responsive background-green", alt: "") %>
+                                <% end %>
                                 <!-- <img class="img-circle img-responsive" src="img/about/1.png" alt=""> -->
                             </div>
                             <div class="timeline-panel">
+                                
                                 <div class="timeline-heading">
                                     <!-- <h4>2009-2011</h4> -->
-                                    <h4 class="subheading">STEP1: 私訊粉絲團</h4>
+                                    <%= link_to("http://igift.tw/", class: "green none-decoration", target: "_blank") do %>
+                                        <h4 class="subheading">STEP1:選定禮物</h4>
+                                    <% end %>
                                 </div>
+                                
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">上愛禮物網站，選購一個最能傳達您的心意的禮物。</p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <%= image_tag("about/2.png", class: "img-circle img-responsive background-green", alt: "") %>
+                                <%= link_to("https://m.facebook.com/messages/read/?fbid=387307328060806&_rdr", target: "_blank") do %>
+                                    <%= image_tag("about/1.png", class: "img-circle img-responsive background-green", alt: "") %>
+                                <% end %>
                                 <!-- <img class="img-circle img-responsive" src="img/about/2.png" alt=""> -->
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <!-- <h4>March 2011</h4> -->
-                                    <h4 class="subheading">STEP2: 精緻包裝/卡片代寫</h4>
+                                    <%= link_to("https://m.facebook.com/messages/read/?fbid=387307328060806&_rdr", target: "_blank", class: "green none-decoration") do %>
+                                        <h4 class="subheading">STEP2:私訊粉絲團</h4>
+                                    <% end %>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">透過粉絲團私訊下單，並提供收件人資訊(收件人姓名、地址、電話)，以及您欲愛禮物替您書寫在卡片上的內容。</p>
                                 </div>
                             </div>
                         </li>
@@ -161,10 +176,12 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <!-- <h4>December 2012</h4> -->
-                                    <h4 class="subheading">STEP3: 給她/他一個驚喜</h4>
+                                    <%= link_to("http://igift.tw/",class: "green none-decoration", target: "_blank") do %>
+                                        <h4 class="subheading">STEP3:結帳並給他/她一個驚喜</h4>
+                                    <% end %>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <p class="text-muted">透過ATM轉帳或線上刷卡完成付款後，與他/她一同等待這個驚喜。</p>
                                 </div>
                             </div>
                         </li>
@@ -293,7 +310,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">聯絡我們</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">有任何問題，
+都歡迎您寄信到愛禮物服務信箱 igift.service@gmail.com
+或私訊粉絲團喔</h3>
                 </div>
             </div>
             <div class="row">
