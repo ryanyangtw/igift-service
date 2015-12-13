@@ -18,9 +18,7 @@
  */
 
 .navbar-default .navbar-brand {
-    /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
-    /*color: aqua; */
-  /*color: rgba(255, 0, 82, 0.75);*/
+
   color: #65c1c1;
 }
 
@@ -51,6 +49,17 @@
 
 .none-decoration:hover {
   text-decoration: none;
+}
+
+a.page-scroll:focus, a.page-scroll:visited {
+  color: #65A8C1;
+}
+
+.navbar>.navbar-brand {
+  color: #65c1c1;
+}
+.navbar-default .navbar-brand:hover {
+  color: aqua;
 }
 
 
@@ -99,13 +108,11 @@ section h3.middle-description  {
 @media screen and (max-width: 992px) {
   /*如果使用者之視窗寬度 <= 992px，將會再載入這裡的 CSS。*/
   .background-box {
-    /*margin: 0 200px 0 200px;*/
+
     background-color: rgba(23, 21, 15, 0.62);
     padding: 20px 0px 20px 0px;
     margin-left: 0px;
     margin-right: 0px;
-    /*padding-top: 30px;
-    padding-bottom: 30px;*/
   }
 }
 
